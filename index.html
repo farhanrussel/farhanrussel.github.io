@@ -71,4 +71,149 @@ h2 {
 
 .btn:hover {
     background: #0ea5e9;
-    transfo
+    transform: translateY(-3px);
+}
+
+.card {
+    background: #1e293b;
+    padding: 28px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.6s ease;
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    background: #334155;
+}
+
+ul {
+    line-height: 1.7;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #334155;
+    color: #94a3b8;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <img src="profile.jpeg" alt="Farhan Russel">
+    <h1>Farhan Russel</h1>
+    <p>Data Analyst | SQL | Python | Tableau | Business Intelligence</p>
+    <a href="Farhan_Russel_CV.pdf" class="btn" download>Download CV</a>
+</section>
+
+<!-- ABOUT -->
+<section>
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+        Management graduate transitioning into Data Analytics with hands-on experience in SQL, Python, Tableau, 
+        financial analytics, customer segmentation, and retention strategy. 
+        I specialize in transforming raw data into actionable business insights and data-driven strategy.
+        </p>
+    </div>
+</section>
+
+<!-- TOOLS -->
+<section>
+    <h2>Tools & Skills</h2>
+    <div class="card">
+        <ul>
+            <li>SQL (JOIN, CTE, Window Functions – BigQuery)</li>
+            <li>Python (Pandas, NumPy, Scikit-Learn)</li>
+            <li>Tableau Dashboard Development</li>
+            <li>Statistical Analysis & Hypothesis Testing</li>
+            <li>Data Cleaning & Feature Engineering</li>
+            <li>Business KPI & Retention Strategy Development</li>
+        </ul>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+    <h2>Featured Projects</h2>
+
+    <div class="card">
+        <h3>Olist E-Commerce – Customer Retention Optimization</h3>
+        <p>Developed RFM segmentation and strategic roadmap to improve retention rate from 3% to 6.1% using 96K orders dataset.</p>
+        <a href="https://docs.google.com/presentation/d/1NXVoJ7AmN7enReoQ78dDwLZbg4N8e1GQMiflF1-RO2s" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="card">
+        <h3>RevoBank – Credit Card Profitability & Clustering</h3>
+        <p>Calculated Rp 5.6B net profit, analyzed fraud rate (0.26%), and built K-Means segmentation model to optimize unused credit capacity.</p>
+        <a href="https://docs.google.com/presentation/d/1HTvjrsPx_Tt8PC9InffA4RKg3gvrMlk2k7wBpzUkWP0" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="card">
+        <h3>RevoGrocers – SQL Revenue Analysis</h3>
+        <p>Identified key revenue drivers through JOIN analysis, contribution breakdown, and cumulative window tracking.</p>
+        <a href="https://docs.google.com/presentation/d/1GRrf_GcCzGXVJh_vUt-nF9CosuMVt0aqQF-NhtGbFT8" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="card">
+        <h3>TokoBli – Campaign & A/B Testing</h3>
+        <p>Performed hypothesis testing and validated statistically significant uplift in transaction value.</p>
+        <a href="https://docs.google.com/presentation/d/1T9yYDOynJRd-JpGAPBY2jfqZjtMSDCudtseQhULBrCY" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="card">
+        <h3>RevoFinance – Budget Dashboard</h3>
+        <p>Built interactive dashboard analyzing Rp 509M annual spending and KPI budget utilization.</p>
+        <a href="https://docs.google.com/presentation/d/1jh0vzJH1X-zTji2Jb-ECLifI49gl0uyd0I-bee1VLjs" target="_blank" class="btn">View Project</a>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section>
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: farhanrsl123@gmail.com</p>
+        <p>Location: Jakarta, Indonesia</p>
+        <p>GitHub: https://github.com/farhanrussel</p>
+        <p>LinkedIn: (Add your LinkedIn URL here)</p>
+    </div>
+</section>
+
+<div class="footer">
+    © 2026 Farhan Russel
+</div>
+
+<script>
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+    const trigger = window.innerHeight * 0.85;
+
+    cards.forEach(card => {
+        const top = card.getBoundingClientRect().top;
+        if (top < trigger) {
+            card.classList.add('visible');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
