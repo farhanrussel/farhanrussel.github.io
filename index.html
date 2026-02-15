@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Farhan Russel | Data Analyst Portfolio</title>
+<title>Farhan Russel | Data Analyst</title>
+
+<!-- ICON LIBRARY -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 html { scroll-behavior: smooth; }
@@ -27,6 +30,7 @@ h2 {
     font-size: 32px;
 }
 
+/* HERO */
 .hero {
     height: 100vh;
     display: flex;
@@ -47,15 +51,9 @@ h2 {
     animation: float 3s ease-in-out infinite;
 }
 
-.hero h1 {
-    font-size: 44px;
-    margin: 10px 0;
-}
+.hero h1 { font-size: 44px; margin: 10px 0; }
 
-.hero p {
-    color: #94a3b8;
-    font-size: 18px;
-}
+.hero p { color: #94a3b8; font-size: 18px; }
 
 .btn {
     display: inline-block;
@@ -74,6 +72,7 @@ h2 {
     transform: translateY(-3px);
 }
 
+/* CARD */
 .card {
     background: #1e293b;
     padding: 28px;
@@ -93,8 +92,24 @@ h2 {
     background: #334155;
 }
 
-ul {
-    line-height: 1.7;
+/* TOOLS */
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    font-size: 18px;
+}
+
+.tools i {
+    color: #38bdf8;
+    margin-right: 8px;
+}
+
+/* CONTACT */
+.contact i {
+    margin-right: 10px;
+    color: #38bdf8;
 }
 
 .footer {
@@ -118,102 +133,4 @@ ul {
 <section class="hero">
     <img src="profile.jpeg" alt="Farhan Russel">
     <h1>Farhan Russel</h1>
-    <p>Data Analyst | SQL | Python | Tableau | Business Intelligence</p>
-    <a href="Farhan_Russel_CV.pdf" class="btn" download>Download CV</a>
-</section>
-
-<!-- ABOUT -->
-<section>
-    <h2>About Me</h2>
-    <div class="card">
-        <p>
-        Management graduate transitioning into Data Analytics with hands-on experience in SQL, Python, Tableau, 
-        financial analytics, customer segmentation, and retention strategy. 
-        I specialize in transforming raw data into actionable business insights and data-driven strategy.
-        </p>
-    </div>
-</section>
-
-<!-- TOOLS -->
-<section>
-    <h2>Tools & Skills</h2>
-    <div class="card">
-        <ul>
-            <li>SQL (JOIN, CTE, Window Functions – BigQuery)</li>
-            <li>Python (Pandas, NumPy, Scikit-Learn)</li>
-            <li>Tableau Dashboard Development</li>
-            <li>Statistical Analysis & Hypothesis Testing</li>
-            <li>Data Cleaning & Feature Engineering</li>
-            <li>Business KPI & Retention Strategy Development</li>
-        </ul>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section>
-    <h2>Featured Projects</h2>
-
-    <div class="card">
-        <h3>Olist E-Commerce – Customer Retention Optimization</h3>
-        <p>Developed RFM segmentation and strategic roadmap to improve retention rate from 3% to 6.1% using 96K orders dataset.</p>
-        <a href="https://docs.google.com/presentation/d/1NXVoJ7AmN7enReoQ78dDwLZbg4N8e1GQMiflF1-RO2s" target="_blank" class="btn">View Project</a>
-    </div>
-
-    <div class="card">
-        <h3>RevoBank – Credit Card Profitability & Clustering</h3>
-        <p>Calculated Rp 5.6B net profit, analyzed fraud rate (0.26%), and built K-Means segmentation model to optimize unused credit capacity.</p>
-        <a href="https://docs.google.com/presentation/d/1HTvjrsPx_Tt8PC9InffA4RKg3gvrMlk2k7wBpzUkWP0" target="_blank" class="btn">View Project</a>
-    </div>
-
-    <div class="card">
-        <h3>RevoGrocers – SQL Revenue Analysis</h3>
-        <p>Identified key revenue drivers through JOIN analysis, contribution breakdown, and cumulative window tracking.</p>
-        <a href="https://docs.google.com/presentation/d/1GRrf_GcCzGXVJh_vUt-nF9CosuMVt0aqQF-NhtGbFT8" target="_blank" class="btn">View Project</a>
-    </div>
-
-    <div class="card">
-        <h3>TokoBli – Campaign & A/B Testing</h3>
-        <p>Performed hypothesis testing and validated statistically significant uplift in transaction value.</p>
-        <a href="https://docs.google.com/presentation/d/1T9yYDOynJRd-JpGAPBY2jfqZjtMSDCudtseQhULBrCY" target="_blank" class="btn">View Project</a>
-    </div>
-
-    <div class="card">
-        <h3>RevoFinance – Budget Dashboard</h3>
-        <p>Built interactive dashboard analyzing Rp 509M annual spending and KPI budget utilization.</p>
-        <a href="https://docs.google.com/presentation/d/1jh0vzJH1X-zTji2Jb-ECLifI49gl0uyd0I-bee1VLjs" target="_blank" class="btn">View Project</a>
-    </div>
-
-</section>
-
-<!-- CONTACT -->
-<section>
-    <h2>Contact</h2>
-    <div class="card">
-        <p>Email: farhanrsl123@gmail.com</p>
-        <p>Location: Jakarta, Indonesia</p>
-        <p>GitHub: https://github.com/farhanrussel</p>
-        <p>LinkedIn: (Add your LinkedIn URL here)</p>
-    </div>
-</section>
-
-<div class="footer">
-    © 2026 Farhan Russel
-</div>
-
-<script>
-const cards = document.querySelectorAll('.card');
-
-window.addEventListener('scroll', () => {
-    const trigger = window.innerHeight * 0.85;
-
-    cards.forEach(card => {
-        const top = card.getBoundingClientRect().top;
-        if (top < trigger) {
-            card.classList.add('visible');
-        }
-    });
-});
-</script>
-
-</body>
-</html>
+    <p>Data Analyst | SQL | Python | Tableau | Busin
