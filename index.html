@@ -133,4 +133,112 @@ h2 {
 <section class="hero">
     <img src="profile.jpeg" alt="Farhan Russel">
     <h1>Farhan Russel</h1>
-    <p>Data Analyst | SQL | Python | Tableau | Busin
+    <p>Data Analyst | SQL | Python | Tableau | Business Intelligence</p>
+    <a href="Farhan_Russel_CV.pdf" class="btn" download>
+        <i class="fa-solid fa-download"></i> Download CV
+    </a>
+</section>
+
+<!-- ABOUT -->
+<section>
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+        Management graduate transitioning into Data Analytics with hands-on experience 
+        in business analysis, customer segmentation, financial insight development, 
+        and data-driven strategy.
+        </p>
+    </div>
+</section>
+
+<!-- TOOLS -->
+<section>
+    <h2>Tools</h2>
+    <div class="card tools">
+        <div><i class="fa-solid fa-database"></i> SQL</div>
+        <div><i class="fa-brands fa-python"></i> Python</div>
+        <div><i class="fa-solid fa-chart-column"></i> Tableau</div>
+        <div><i class="fa-solid fa-file-excel"></i> Excel</div>
+        <div><i class="fa-solid fa-square-root-variable"></i> Statistics</div>
+        <div><i class="fa-solid fa-code"></i> BigQuery</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+    <h2>Featured Projects</h2>
+
+    <div class="card">
+        <h3>Olist E-Commerce – Retention Optimization</h3>
+        <p>Customer RFM segmentation & strategic roadmap improving retention rate.</p>
+        <a href="https://docs.google.com/presentation/d/1cAEi3sYk-xY89LvzusETzSpIk4UMSzbGdgDveynF4hM" target="_blank" class="btn">
+            <i class="fa-solid fa-up-right-from-square"></i> View Project
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>RevoBank – Profitability & Clustering</h3>
+        <p>Credit card profit analysis & K-Means segmentation modeling.</p>
+        <a href="https://docs.google.com/presentation/d/1HTvjrsPx_Tt8PC9InffA4RKg3gvrMlk2k7wBpzUkWP0" target="_blank" class="btn">
+            <i class="fa-solid fa-up-right-from-square"></i> View Project
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>RevoGrocers – SQL Revenue Analysis</h3>
+        <p>Revenue contribution & window function analysis.</p>
+        <a href="https://docs.google.com/presentation/d/1GRrf_GcCzGXVJh_vUt-nF9CosuMVt0aqQF-NhtGbFT8" target="_blank" class="btn">
+            <i class="fa-solid fa-up-right-from-square"></i> View Project
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>TokoBli – A/B Testing</h3>
+        <p>Campaign performance validation with hypothesis testing.</p>
+        <a href="https://docs.google.com/presentation/d/1T9yYDOynJRd-JpGAPBY2jfqZjtMSDCudtseQhULBrCY" target="_blank" class="btn">
+            <i class="fa-solid fa-up-right-from-square"></i> View Project
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>RevoFinance – Budget Dashboard</h3>
+        <p>Financial KPI tracking & interactive dashboard.</p>
+        <a href="https://docs.google.com/presentation/d/1jh0vzJH1X-zTji2Jb-ECLifI49gl0uyd0I-bee1VLjs" target="_blank" class="btn">
+            <i class="fa-solid fa-up-right-from-square"></i> View Project
+        </a>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section>
+    <h2>Contact</h2>
+    <div class="card contact">
+        <p><i class="fa-solid fa-envelope"></i> farhanrsl123@gmail.com</p>
+        <p><i class="fa-brands fa-linkedin"></i> 
+        <a href="https://linkedin.com/in/farhanrussel" target="_blank" style="color:#38bdf8;">
+        linkedin.com/in/farhanrussel</a></p>
+        <p><i class="fa-brands fa-github"></i> 
+        <a href="https://github.com/farhanrussel" target="_blank" style="color:#38bdf8;">
+        github.com/farhanrussel</a></p>
+        <p><i class="fa-solid fa-location-dot"></i> Jakarta, Indonesia</p>
+    </div>
+</section>
+
+<div class="footer">
+    © 2026 Farhan Russel
+</div>
+
+<script>
+const cards = document.querySelectorAll('.card');
+window.addEventListener('scroll', () => {
+    const trigger = window.innerHeight * 0.85;
+    cards.forEach(card => {
+        const top = card.getBoundingClientRect().top;
+        if (top < trigger) { card.classList.add('visible'); }
+    });
+});
+</script>
+
+</body>
+</html>
