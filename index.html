@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Farhan Russel | Data Analyst</title>
+<title>Farhan Russel | Data Portfolio</title>
 
 <style>
-
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
     margin: 0;
@@ -27,6 +24,7 @@ section {
 h2 {
     text-align: center;
     margin-bottom: 40px;
+    font-size: 30px;
 }
 
 .hero {
@@ -35,7 +33,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(145deg, #0f172a, #1e293b);
+    background: linear-gradient(145deg,#0f172a,#1e293b);
     text-align: center;
 }
 
@@ -44,149 +42,11 @@ h2 {
     height: 170px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
     border: 4px solid #38bdf8;
+    margin-bottom: 20px;
     animation: float 3s ease-in-out infinite;
 }
 
-.hero h1 {
-    font-size: 40px;
-    margin: 10px 0;
-}
+.hero h1 { font-size: 42px; margin: 10px 0; }
 
-.hero p {
-    color: #94a3b8;
-    margin-bottom: 30px;
-}
-
-.btn {
-    padding: 12px 25px;
-    background: #38bdf8;
-    color: #0f172a;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #0ea5e9;
-    transform: translateY(-3px);
-}
-
-.project {
-    background: #1e293b;
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    transition: 0.3s;
-    opacity: 0;
-    transform: translateY(40px);
-}
-
-.project.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.project:hover {
-    background: #334155;
-}
-
-.skills {
-    text-align: center;
-}
-
-.footer {
-    text-align: center;
-    padding: 30px;
-    border-top: 1px solid #334155;
-    color: #94a3b8;
-}
-
-@keyframes float {
-    0% { transform: translatey(0px); }
-    50% { transform: translatey(-10px); }
-    100% { transform: translatey(0px); }
-}
-
-</style>
-</head>
-
-<body>
-
-<section class="hero">
-    <img src="profile.jpeg" alt="Farhan Russel">
-    <h1>Farhan Russel</h1>
-    <p>Data Analyst | SQL | Python | Tableau | Business Intelligence</p>
-    <a href="Farhan_Russel_CV.pdf" class="btn" download>Download CV</a>
-</section>
-
-<section>
-    <h2>About Me</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">
-        I believe integrity and analytical thinking are the core values that guide my work. I bring over 3 years of experience in operations and project management across hospitality, construction, and real estate sectors In my position as Assistant Operation Manager at PT Giri Suwarnna Abadi (RS Hermina), I successfully maintained food costs consistently below 40% of sales and implemented a digital meal ordering system that eliminated errors and improved operational efficiency My ability to tackle analytical challenges and create data-driven solutions, alongside my proficiency in tools like Excel and Google Workspace, positions me well for the Data Analyst role I am pursuing What distinguishes me from other candidates is my unique combination of hands-on operational experience and an analytical mindset, allowing me to translate data into actionable business insights effectively.
-    </p>
-</section>
-
-<section>
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>Olist E-Commerce – Customer Retention Optimization</h3>
-        <p>Built retention strategy roadmap from 3% to 6.1% using RFM segmentation, delivery performance analysis, and geographic optimization (96K orders dataset).</p>
-    </div>
-
-    <div class="project">
-        <h3>RevoBank – Credit Card Profitability & Clustering</h3>
-        <p>Calculated Rp 5.6B net profit, analyzed 0.26% fraud rate, and developed K-Means segmentation to unlock unused credit capacity.</p>
-    </div>
-
-    <div class="project">
-        <h3>RevoGrocers – SQL Sales Performance Analysis</h3>
-        <p>Identified top revenue drivers using BigQuery JOIN analysis, revenue concentration study, and window function cumulative tracking.</p>
-    </div>
-
-    <div class="project">
-        <h3>TokoBli – Campaign & A/B Testing</h3>
-        <p>Measured campaign efficiency and validated statistically significant increase in transaction value through hypothesis testing.</p>
-    </div>
-
-    <div class="project">
-        <h3>RevoFinance – Interactive Budget Dashboard</h3>
-        <p>Developed Tableau dashboard analyzing Rp 509M annual spending and budget utilization trends.</p>
-    </div>
-
-</section>
-
-<section class="skills">
-    <h2>Tools & Skills</h2>
-    <p>
-        SQL (BigQuery) • Python (Pandas, Scikit-Learn) • Tableau • Excel • Statistical Analysis • Data Cleaning • KPI Development
-    </p>
-</section>
-
-<div class="footer">
-    <p>📍 Jakarta, Indonesia</p>
-    <p>📧 farhanrsl123@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/farhanrussel</p>
-</div>
-
-<script>
-const projects = document.querySelectorAll('.project');
-
-window.addEventListener('scroll', () => {
-    const triggerBottom = window.innerHeight * 0.85;
-
-    projects.forEach(project => {
-        const projectTop = project.getBoundingClientRect().top;
-
-        if (projectTop < triggerBottom) {
-            project.classList.add('visible');
-        }
-    });
-});
-</script>
-
-</body>
-</html>
+.hero p { color: #94a3b8; }
